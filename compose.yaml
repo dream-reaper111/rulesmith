@@ -1,0 +1,6 @@
+services:
+  api:
+    build: .
+    environment:
+      RULESMITH_API_TOKEN: ${RULESMITH_API_TOKEN:?Set RULESMITH_API_TOKEN}
+    ports: ["127.0.0.1:8091:8000"]
